@@ -15,6 +15,7 @@ public class WebInitializer implements WebApplicationInitializer {
 	        AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 	         
 	        ctx.register(TilesApplicationConfiguration.class);
+	        ctx.register(HibernateConfig.class);
 	 
 	        container.addListener(new ContextLoaderListener(ctx));
 	 

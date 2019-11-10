@@ -19,13 +19,18 @@
 	<properties>
 		<spring.version>5.0.3.RELEASE</spring.version>
 		<hibernate.version>5.2.10.Final</hibernate.version>
-		 <apachetiles.version>3.0.5</apachetiles.version>
+		<apachetiles.version>3.0.5</apachetiles.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -85,7 +90,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 		</dependency>
-				<!-- Apache Tiles -->
+		<!-- Apache Tiles -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
@@ -107,8 +112,8 @@
 			<version>${apachetiles.version}</version>
 		</dependency>
 	</dependencies>
-	
-	
+
+
 
 	<build>
 		<plugins>

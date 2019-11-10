@@ -36,7 +36,7 @@ public class HibernateConfig {
         lcemfb.setJpaVendorAdapter(getJpaVendorAdapter());
         lcemfb.setDataSource(dataSource());
         lcemfb.setPersistenceUnitName("myJpaPersistenceUnit");
-        lcemfb.setPackagesToScan("com.javaspringclub");
+        lcemfb.setPackagesToScan("com");
         lcemfb.setJpaProperties(hibernateProperties());
         return lcemfb;
     }
